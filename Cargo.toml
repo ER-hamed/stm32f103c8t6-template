@@ -1,0 +1,28 @@
+[package]
+name = "stm32f103c8t6"
+version = "0.1.0"
+authors = ["ER_"]
+edition = "2021"
+
+[dependencies]
+cortex-m = { version = "0.7.7", features = ["critical-section-single-core"]}
+cortex-m-rt = "0.7.3"
+embedded-alloc = "0.5.1"
+embedded-hal = "1.0.0"
+panic-halt = "0.2.0"
+rtt-target = "0.5.0"
+
+[dependencies.stm32f1xx-hal]
+version = "0.10.0"
+features = ["stm32f103"]
+
+# Set the default for dependencies.
+[profile.dev.package."*"]
+opt-level = "s"
+
+[profile.release]
+codegen-units = 1
+incremental = false
+debug = true
+lto = true
+opt-level = "s"
