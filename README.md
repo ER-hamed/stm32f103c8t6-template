@@ -17,8 +17,8 @@ This repository provides a ready-to-use template for running Rust projects on th
 ## 🛠️ Prerequisites
 
 - [Rust](https://www.rust-lang.org/tools/install)
-- [cargo-generate](https://github.com/cargo-generate/cargo-generate)
-- [probe-run](https://probe.rs/docs/getting-started/installation/)
+- [thumbv7m-none-eabi](https://doc.rust-lang.org/nightly/rustc/platform-support/thumbv7m-none-eabi.html)
+- [probe-rs](https://probe.rs/docs/getting-started/installation/)
 - [stm32-rs](https://github.com/stm32-rs)
 
 ## 🔧 How to Use
