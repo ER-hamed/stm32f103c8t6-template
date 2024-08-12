@@ -1,5 +1,7 @@
 # 🦀 Rust on STM32F103C8T6 Template
 
+![embeded-rust](embeded-rust.png)
+
 This repository provides a ready-to-use template for running Rust projects on the STM32F103C8T6 microcontroller.
 
 ## 📋 Specifications
