@@ -31,7 +31,7 @@ git clone https://github.com/ER-hamed/stm32f103c8t6-template.git && cd stm32f103
 ``` sh
 cargo build --release
 ```
-3. Flash the binary to the microcontroller:
+3. Flash binary to the microcontroller:
 ``` sh
 cargo run --release
 ```
