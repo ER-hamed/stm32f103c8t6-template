@@ -11,7 +11,6 @@ This repository provides a ready-to-use template for running Rust projects on th
 ## 🚀 Features
 
 - Initial configuration for STM32F103C8T6
-- Basic examples for working with GPIO, UART, and Timer
 - RTT support for debugging
 - Cargo.toml with initial settings and dependencies
 
