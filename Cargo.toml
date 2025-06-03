@@ -1,7 +1,7 @@
 [package]
 name = "stm32f103c8t6"
 version = "0.1.0"
-authors = ["ER_"]
+authors = ["ER_hamed"]
 edition = "2021"
 
 [dependencies]
