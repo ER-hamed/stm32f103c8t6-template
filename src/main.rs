@@ -26,10 +26,9 @@ fn init_alloc() {
 fn main() -> ! {
     // Initialize system
     rtt_init_print!();
-    rprintln!("Start");
     init_alloc();
-    let Some(dp) = pac::Peripherals::take() else { panic!() };
-    let Some(cp) = cortex_m::peripheral::Peripherals::take() else { panic!() };
+    let dp = pac::Peripherals::take().unwrap();
+    let cp = cortex_m::peripheral::Peripherals::take().wnwrap();
     let mut flash = dp.FLASH.constrain();
     let rcc = dp.RCC.constrain();
     let clocks = rcc.cfgr
@@ -38,9 +37,7 @@ fn main() -> ! {
         .pclk1(36.MHz())  // Set APB1 to 36 MHz
         .pclk2(72.MHz())  // Set APB2 to 72 MHz
         .freeze(&mut flash.acr);
-    #[allow(unused_variables, unused_mut)]
     let mut delay = cp.SYST.delay(&clocks);
-    #[allow(unused_variables, unused_mut)]
     let mut afio = dp.AFIO.constrain();
     rprintln!("Initialized");
 
