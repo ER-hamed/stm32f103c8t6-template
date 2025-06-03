@@ -25,7 +25,8 @@ This repository provides a ready-to-use template for running Rust projects on th
 
 1. Clone this repository:
 ``` sh
-git clone https://github.com/ER-hamed/stm32f103c8t6-template.git && cd stm32f103c8t6-template
+git clone https://github.com/ER-hamed/stm32f103c8t6-template.git
+cd stm32f103c8t6-template
 ```
 2. Build the project:
 ``` sh
